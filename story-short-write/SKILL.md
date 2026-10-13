@@ -348,7 +348,7 @@ metadata: {"openclaw":{"source":"https://github.com/worldwonderer/oh-story-claud
 重点：开头钩子、情绪曲线、反转铺垫、每句话价值、格式规范、AI 腔排查。文件模式先运行 AI 指纹检测：**blocking 数不为 0 时章节不得交付**，先改正文并复扫直到 blocking=0；其他提示只作为读感风险，功能性写法标 `[需复核]`。再跑标点兜底和退化检测；退化 blocking 要重新生成受影响段落，不靠润色。
 
 **本机路径解析（Hermes/Windows，否则门禁静默失效）**：
-- PATH 上的 `node` 可能是要 tty 的 wrapper（报 `stdin is not a tty`）。用真实二进制：`NODE="C:\Users\MindField\AppData\Local\hermes\tools\node-26.7.0-win32-x64\node.exe"`
+- PATH 上的 `node` 可能是要 tty 的 wrapper（报 `stdin is not a tty`）。用真实二进制：`NODE="$LOCALAPPDATA/hermes\tools\node-26.7.0-win32-x64\node.exe"`
 - 脚本是 skill 目录内相对路径，Hermes cwd 是项目目录，必须定位 skill 根：`SKILL_DIR="$LOCALAPPDATA/hermes/skills/story-short-write"`
 - 三连调用（在项目目录下执行，正文.md 用实际路径）：
   `"$NODE" "$SKILL_DIR/scripts/check-ai-patterns.js" --check --fail-on=blocking 正文.md`

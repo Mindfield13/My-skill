@@ -1,6 +1,6 @@
 # hermes-skills
 
-我的技能库（215 个），供 cc-switch 订阅安装 / 更新。
+我的技能库（207 个），供 cc-switch 订阅安装 / 更新。
 
 ## 结构
 
@@ -61,11 +61,7 @@ hermes config set skills.disabled '<见 hermes-skills-清单 的禁用名单>'
 - `docx`
 - `domain-modeling`
 - `edit-article`
-- `electron-app-crack-analysis`
-- `electron-app-shell-development`
-- `electron-fastapi-backend`
 - `electron-nsis-repack`
-- `electron-shell-framework-dev`
 - `email-inbox-triage`
 - `emil-design-eng`
 - `evaluating-llms-harness`
@@ -76,7 +72,6 @@ hermes config set skills.disabled '<见 hermes-skills-清单 的禁用名单>'
 - `game-development`
 - `git-guardrails-claude-code`
 - `github`
-- `godmode`
 - `gpt-tasteskill`
 - `grill-me`
 - `grill-with-docs`
@@ -97,7 +92,6 @@ hermes config set skills.disabled '<见 hermes-skills-清单 的禁用名单>'
 - `improve-codebase-architecture`
 - `inspecting-hermes-desktop-dom`
 - `internal-comms`
-- `js-obfuscation-reversing`
 - `jupyter-live-kernel`
 - `kanban-orchestrator`
 - `kanban-worker`
@@ -114,8 +108,6 @@ hermes config set skills.disabled '<见 hermes-skills-清单 的禁用名单>'
 - `migrate-radix-to-base`
 - `migrate-to-shoehorn`
 - `minimalist-skill`
-- `modex-mh-agent-crack`
-- `mrite-ultra-app`
 - `music-and-audio`
 - `nano-pdf`
 - `nature-academic-search`
@@ -152,7 +144,6 @@ hermes config set skills.disabled '<见 hermes-skills-清单 的禁用名单>'
 - `research`
 - `resolving-merge-conflicts`
 - `review-animations`
-- `ruanzhu-application-materials`
 - `scaffold-exercises`
 - `sdlc-review`
 - `seedance-2.0-main`
@@ -236,3 +227,18 @@ hermes config set skills.disabled '<见 hermes-skills-清单 的禁用名单>'
 - `writing-shape`
 - `xlsx`
 - `yuanbao`
+
+## 不在此仓库的技能
+
+出于隐私/合规，以下 10 个技能只保存在本地，不进公开仓库：
+
+- `mrite-ultra-app`
+- `electron-app-crack-analysis`
+- `electron-app-shell-development`
+- `electron-fastapi-backend`
+- `electron-shell-framework-dev`
+- `modex-mh-agent-crack`
+- `js-obfuscation-reversing`
+- `ruanzhu-application-materials`
+- `godmode`
+- `electron-nsis-repack`

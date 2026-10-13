@@ -489,7 +489,7 @@ story-architect 属于高层级结构设计 agent。轻量题材定位优先由�
 
 **本机路径解析（Hermes/Windows 必读，否则门禁静默失效）**：
 - PATH 上的 `node` 可能是要 tty 的 wrapper，会报 `stdin is not a tty`。改用真实二进制：
-  `NODE="C:\Users\MindField\AppData\Local\hermes\tools\node-26.7.0-win32-x64\node.exe"`（或 `where node` 找到的非 wrapper 路径）
+  `NODE="$LOCALAPPDATA/hermes\tools\node-26.7.0-win32-x64\node.exe"`（或 `where node` 找到的非 wrapper 路径）
 - 脚本是 **skill 目录内的相对路径**，Hermes 的 cwd 是用户项目目录，`node scripts/xxx.js` 找不到文件。必须先定位 skill 根：
   `SKILL_DIR="$LOCALAPPDATA/hermes/skills/story-long-write"`（短篇用 `story-short-write`，deslop 用 `story-deslop`）
 - 完整调用形态：

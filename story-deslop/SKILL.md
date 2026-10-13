@@ -118,7 +118,7 @@ AI味不按语法错误处理，也不需要"修正"。它属于风格问题：�
 node scripts/check-ai-patterns.js --check --fail-on=blocking <正文文件...>
 ```
 
-> **Hermes/Windows 路径解析（否则脚本跑不起来）**：PATH 上的 `node` 可能是要 tty 的 wrapper（报 `stdin is not a tty`），改用真实二进制 `NODE="C:\Users\MindField\AppData\Local\hermes\tools\node-26.7.0-win32-x64\node.exe"`；脚本是本 skill 目录内相对路径，Hermes 的 cwd 是用户项目目录，须先定位 `SKILL_DIR="$LOCALAPPDATA/hermes/skills/story-deslop"`，实际调用为 `"$NODE" "$SKILL_DIR/scripts/check-ai-patterns.js" --check --fail-on=blocking <正文文件...>`。
+> **Hermes/Windows 路径解析（否则脚本跑不起来）**：PATH 上的 `node` 可能是要 tty 的 wrapper（报 `stdin is not a tty`），改用真实二进制 `NODE="$LOCALAPPDATA/hermes\tools\node-26.7.0-win32-x64\node.exe"`；脚本是本 skill 目录内相对路径，Hermes 的 cwd 是用户项目目录，须先定位 `SKILL_DIR="$LOCALAPPDATA/hermes/skills/story-deslop"`，实际调用为 `"$NODE" "$SKILL_DIR/scripts/check-ai-patterns.js" --check --fail-on=blocking <正文文件...>`。
 
 - `not-is-comparison` 与 `em-dash` 并入 Gate B，属于写作/去 AI 味时优先处理的 blocking 类问题。
 - 其他 findings（碎句号、长段落、微动作、动作清单、抽象总结、套词、比喻密度、解释链、公文腔、过度精炼、低连接密度）只作读感提示；完整类别和修法见 `references/anti-ai-writing.md`。
