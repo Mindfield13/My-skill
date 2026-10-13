@@ -1,0 +1,10 @@
+{
+  "id": "myapp",
+  "name": "我的应用",
+  "nameEn": "My App",
+  "icon": "📦",
+  "entry": "index.html",
+  "main": "main.js",
+  "order": 10,
+  "wallpaper": true
+}
